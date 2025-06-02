@@ -1,0 +1,50 @@
+We will need to process each channel separately to achieve an authentic effect.
+
+Colors > Components > Decompose…
+Set YCbCr ITU R470
+and apply
+
+Filters > Noise > RGB Noise… to the LUMA CHANNEL only!
+Correlated noise
+DESMARCA RGB Independent
+Value 1,000
+and apply
+
+Filters > Blur > Gaussian Blur… to the LUMA CHANNEL only!
+6,00 and 4,00
+and apply
+
+Filters > Enhance > Sharpen (Unsharp Mask)… to the LUMA CHANNEL only!
+4,255 and 2,761
+and apply
+
+Colors > Curves… to the LUMA CHANNEL only!
+Check Image 01.png!
+and apply
+
+Filters > Blur > Gaussian Blur… for both the REDNESS and BLUENESS
+20,0 and 7,0
+and apply
+
+Not seen luma layer;
+Then move the BLUENESS channel a bit to the left, just some pixels, and set Layer to image size.
+
+Colors > Components > Compose…
+set color model to YCbCr ITU R470
+and apply
+
+Filters > Distorts > Curve Bend…
+Don’t forget to set the “Curve Type” to “Free”.
+Click OPEN file and use vhs-curve-bend.points file!
+and apply
+
+Colors > Color Balance…
+Set HIGHLIGHTS and Magenta -20
+again
+Set MIDTONES and Cyan to -4
+and apply
+
+Colors > Saturation…
+Reduce a bit around 0,8
+
+That's it!
